@@ -11,6 +11,7 @@
                 <StackLayout Padding="5,100,5,5">
                     <Button Text="Main Page" Clicked="btn_mainPage"/>
                     <Button Text="Settings" Clicked="btn_settingsPage"/>
+                  
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>

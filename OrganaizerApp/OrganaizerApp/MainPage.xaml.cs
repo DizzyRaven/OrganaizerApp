@@ -13,12 +13,12 @@ namespace OrganaizerApp
 		{
 			InitializeComponent();
 
-            Detail = new NavigationPage(new MainContentPage());
+            Detail = new MainContentPage();
             IsPresented = false;
 		}
         private void btn_mainPage(object sender, EventArgs e)
         {
-            Detail = new NavigationPage(new MainContentPage());
+            Detail =new MainContentPage();
             IsPresented = false;
         }
         private void btn_settingsPage(object sender, EventArgs e)

@@ -13,7 +13,7 @@ namespace OrganaizerApp
 		{
 			InitializeComponent();
 
-			MainPage = new OrganaizerApp.MainPage();
+			MainPage = new NavigationPage( new OrganaizerApp.MainPage());
 		}
 
 		protected override void OnStart ()

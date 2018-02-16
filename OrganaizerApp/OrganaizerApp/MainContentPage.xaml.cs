@@ -15,6 +15,18 @@ namespace OrganaizerApp
 		public MainContentPage ()
 		{
 			InitializeComponent ();
+
+            ToolbarItem tb = new ToolbarItem()
+            {
+                Text = "Add",
+                Order = ToolbarItemOrder.Primary,
+                Priority = 0,
+                Icon = new FileImageSource
+                {
+                    File = "Pencil.png"
+                }
+            };
+            ToolbarItems.Add(tb);
 		}
 	}
 }
