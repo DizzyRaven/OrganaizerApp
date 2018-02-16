@@ -1,11 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:OrganaizerApp"
-             x:Class="OrganaizerApp.MainPage">
+             x:Class="OrganaizerApp.MainPage"
+                  Title="MasterApp">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <MasterDetailPage.Master>
+        <ContentPage Title="MainMasterPage">
+            <ContentPage.Content>
+                <StackLayout Padding="5,100,5,5">
+                    <Button Text="Main Page" Clicked="btn_mainPage"/>
+                    <Button Text="Settings" Clicked="btn_settingsPage"/>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        
+    </MasterDetailPage.Detail>
 
-</ContentPage>
+</MasterDetailPage>
